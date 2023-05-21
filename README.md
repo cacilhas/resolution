@@ -1,4 +1,4 @@
-[COPYING]: https://github.com/cacilhas/resolution/blob/master/COPYING.md
+[COPYING]: https://github.com/cacilhas/resolution/blob/master/COPYING
 [The 3-Clause BSD License]: https://opensource.org/licenses/BSD-3-Clause
 
 # Resolution
@@ -7,8 +7,7 @@ Crate to retrieve screen resolution/dimensions on Linux and macOS.
 
 ## Rational
 
-I have rewrite this same code so many times that it has proved its necessity
-to exist.
+I have rewrite this same code so many times that it justifies existing.
 
 ## Install
 
