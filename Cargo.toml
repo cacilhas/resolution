@@ -1,0 +1,22 @@
+[package]
+name        = "resolution"
+version     = "0.1.0"
+authors     = ["Rodrigo Montegasppα Cacilhας <montegasppa@cacilhas.info"]
+license     = "BSD-3-Clause"
+readme      = "README.md"
+homepage    = "https://github.com/cacilhas/resolution"
+repository  = "https://github.com/cacilhas/resolution"
+keywords    = ["screen", "linux", "macos"]
+description = "Retrieves current screen resolution"
+edition     = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+xrandr = "0.1"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-graphics = "0.22"
