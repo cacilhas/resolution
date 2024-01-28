@@ -1,6 +1,6 @@
 [package]
 name        = "resolution"
-version     = "0.1.1"
+version     = "0.1.2"
 authors     = ["Rodrigo Montegasppα Cacilhας <montegasppa@cacilhas.info"]
 license     = "BSD-3-Clause"
 readme      = "README.md"
@@ -16,7 +16,7 @@ edition     = "2021"
 thiserror = "1.0"
 
 [target.'cfg(target_os = "linux")'.dependencies]
-xrandr = "0.1"
+xrandr = "0.2"
 
 [target.'cfg(target_os = "macos")'.dependencies]
-core-graphics = "0.22"
+core-graphics = "0.23"

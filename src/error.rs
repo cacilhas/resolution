@@ -3,6 +3,7 @@ use std::{fmt, write};
 #[derive(Debug, thiserror::Error)]
 pub enum ResolutionError {
     CouldNotGetResolution,
+    NotImplemented,
     #[cfg(target_os = "linux")]
     XrandrError(xrandr::XrandrError),
 }
@@ -12,6 +13,9 @@ impl fmt::Display for ResolutionError {
         match self {
             ResolutionError::CouldNotGetResolution => write!(f, "failed to get screen resolution"),
             #[cfg(target_os = "linux")]
+            ResolutionError::NotImplemented => {
+                write!(f, "resolution not implemented for the current O.S.")
+            }
             ResolutionError::XrandrError(err) => {
                 write!(f, "error from xrandr: {err:?}")
             }

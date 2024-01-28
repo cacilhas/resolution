@@ -33,3 +33,10 @@ pub fn current_resolution() -> Result<(i32, i32), ResolutionError> {
     let height = display.pixels_high();
     Ok((width as i32, height as i32))
 }
+
+// Defaults to error
+
+#[cfg(not(any(target_os = "linux", target_os = "macos")))]
+pub fn current_resolution() -> Result<(i32, i32), ResolutionError> {
+    Err(ResolutionError::NotImplemented)
+}

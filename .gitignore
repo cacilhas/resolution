@@ -3,4 +3,5 @@
 .*
 core
 target
+Cargo.lock
 !.gitignore
