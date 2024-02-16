@@ -12,10 +12,10 @@ impl fmt::Display for ResolutionError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
             ResolutionError::CouldNotGetResolution => write!(f, "failed to get screen resolution"),
-            #[cfg(target_os = "linux")]
             ResolutionError::NotImplemented => {
                 write!(f, "resolution not implemented for the current O.S.")
             }
+            #[cfg(target_os = "linux")]
             ResolutionError::XrandrError(err) => {
                 write!(f, "error from xrandr: {err:?}")
             }
