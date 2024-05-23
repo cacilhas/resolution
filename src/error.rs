@@ -1,6 +1,6 @@
-use std::{fmt, write};
+use std::{error::Error, fmt, write};
 
-#[derive(Debug, thiserror::Error)]
+#[derive(Debug)]
 pub enum ResolutionError {
     CouldNotGetResolution,
     NotImplemented,
@@ -22,6 +22,8 @@ impl fmt::Display for ResolutionError {
         }
     }
 }
+
+impl Error for ResolutionError {}
 
 #[cfg(target_os = "linux")]
 impl From<xrandr::XrandrError> for ResolutionError {
