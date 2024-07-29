@@ -1,6 +1,6 @@
 [package]
 name        = "resolution"
-version     = "0.1.4"
+version     = "0.2.0"
 authors     = ["Rodrigo Montegasppα Cacilhας <montegasppa@cacilhas.info"]
 license     = "BSD-3-Clause"
 readme      = "README.md"
