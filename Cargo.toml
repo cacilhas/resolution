@@ -6,7 +6,7 @@ license     = "BSD-3-Clause"
 readme      = "README.md"
 homepage    = "https://github.com/cacilhas/resolution"
 repository  = "https://github.com/cacilhas/resolution"
-keywords    = ["screen", "linux", "macos"]
+keywords    = ["screen", "linux", "macos", "windows"]
 description = "Retrieves current screen resolution"
 edition     = "2021"
 
@@ -19,3 +19,6 @@ xrandr = "0.2"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 core-graphics = "0.23"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-sys = { version = "0.52", features = ["Win32_UI_WindowsAndMessaging"] }
