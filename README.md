@@ -3,7 +3,7 @@
 
 # Resolution
 
-Crate to retrieve screen resolution/dimensions on Linux and macOS.
+Crate to retrieve screen resolution/dimensions on Linux, macOS, and Windows.
 
 ## Rational
 
