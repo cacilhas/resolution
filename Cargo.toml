@@ -21,4 +21,4 @@ xrandr = "0.2"
 core-graphics = "0.23"
 
 [target.'cfg(target_os = "windows")'.dependencies]
-windows-sys = { version = "0.52.0", features = ["Win32_UI_WindowsAndMessaging"] }
+windows-sys = { version = "0.52", features = ["Win32_UI_WindowsAndMessaging"] }
