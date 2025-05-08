@@ -1,7 +1,7 @@
 [package]
 name        = "resolution"
 version     = "0.2.0"
-authors     = ["Rodrigo Montegasppα Cacilhας <montegasppa@cacilhas.info"]
+authors     = ["Rodrigo Montegasppα Cacilhας <montegasppa@cacilhas.cc"]
 license     = "BSD-3-Clause"
 readme      = "README.md"
 homepage    = "https://codeberg.org/cacilhas/resolution"
